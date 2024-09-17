@@ -7,6 +7,8 @@ const nextConfig = {
     config.externals = [...config.externals, { canvas: "canvas" }]; // required to make pdfjs work
     return config;
   },
+  output: 'export',  // 静的ファイルエクスポート
 };
+
 
 module.exports = nextConfig;
